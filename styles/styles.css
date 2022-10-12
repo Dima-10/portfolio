@@ -94,6 +94,9 @@ ul{
     font-size: 22px;
     font-family: "PT Sans";
 }
+
+
+/*MAIN*/
 main{
     background: #282929;
 }
@@ -423,6 +426,16 @@ footer ul{
     }
     
 }
+@media(max-width:516px){
+    .header__content .container h1{
+        line-height: 60px;
+    }
+    .header__content .container p{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+}
 @media(max-width:375px){
     .tab__text a{
         margin-top: 20px;
@@ -434,6 +447,9 @@ footer ul{
     }
     .footer__contacts a:nth-child(1){
         margin-right: 0px;
+    }
+    .header__content .container h1{
+        margin-bottom: 30px;
     }
 
 }
