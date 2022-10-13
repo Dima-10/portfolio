@@ -5,22 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./images/Logo-black.png">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header class="d-flex flex-column">
+    <header class="header d-flex flex-column">
         <nav class="header__nav">
             <div class="container d-flex justify-content-between align-items-center">
-                <a href="" class="logo"><span>my</span>works</a>
-                <ul class="header__menu d-flex">
-                    <li><a href="" class="header__link">история</a></li>
-                    <li><a href="" class="header__link">работы</a></li>
-                    <li><a href="" class="header__link">контакты</a></li>
+
+                <button class="nav__btn"><i class="fa-solid fa-bars"></i></button>
+                <a href="" class="header__logo"><img src="images/Logo-white.png" alt="MD" class="logo"></a>
+                <ul class="header__menu">
+                    <li><a href="#history" class="nav__link js-sсroll-to-id">история</a></li>
+                    <li><a href="#works" class="nav__link js-sсroll-to-id">работы</a></li>
+                    <li><a href="#capabilities" class="nav__link js-sсroll-to-id">возможности</a></li>
+                    <li><a href="#contacts" class="nav__link js-sсroll-to-id">контакты</a></li>
                 </ul>
+                
             </div>
         </nav>
         <div class="header__content d-flex flex-grow-1 align-items-center">
@@ -36,7 +41,7 @@
         </div>
     </header>
     <main>
-        <section class="history">
+        <section id="history" class="history">
             <div class="history__text">
                 <div class="container">
                     <div class="row flex-column align-items-center">
@@ -58,7 +63,7 @@
                         <div class="row">
                             <div class="col-1 d-none d-md-block">
                                 <a class="carousel-control-prev" href="#history-slider" role="button" data-slide="prev">
-                                    <span><i class="fad fa-angle-left"></i></span>
+                                    <span><i class="fa-solid fa-angle-left"></i></span>
                                 </a>
                             </div>
                             <div class="col-12 col-md-10">
@@ -118,7 +123,7 @@
                             </div>
                             <div class="col-1 d-none d-md-block">
                                 <a class="carousel-control-next" href="#history-slider" role="button" data-slide="next">
-                                    <span><i class="fad fa-angle-right"></i></span>
+                                    <span><i class="fa-solid fa-angle-right"></i></span>
                                 </a>
                             </div>
                         </div>
@@ -126,7 +131,7 @@
                 </div>
             </div>
         </section>
-        <section class="works">
+        <section id="works" class="works">
             <div class="works__text">
                 <div class="container">
                     <div class="row flex-column align-items-center">
@@ -186,10 +191,10 @@
                         <div class="tab-pane fade show active" id="pills-nike" role="tabpanel"
                             aria-labelledby="pills-nike-tab">
                             <div class="row">
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-10 col-lg-6">
                                     <a href="" class="project-link"><img src="images/nike.png" alt="tab content image"></a>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-10 col-lg-6">
                                     <div
                                         class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
                                         <div class="tab__top">
@@ -213,10 +218,10 @@
 
                         <div class="tab-pane fade" id="pills-silver" role="tabpanel" aria-labelledby="pills-silver-tab">
                             <div class="row">
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-10 col-lg-6">
                                     <a href="" class="project-link"><img src="images/silver-house.jpg" alt="tab content image"></a>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-10 col-lg-6">
                                     <div
                                         class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
                                         <div class="tab__top">
@@ -240,10 +245,10 @@
 
                         <div class="tab-pane fade" id="pills-orange" role="tabpanel" aria-labelledby="pills-orange-tab">
                             <div class="row">
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-10 col-lg-6">
                                     <a href="" class="project-link"><img src="images/orange-market.jpg" alt="tab content image"></a>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-10 col-lg-6">
                                     <div
                                         class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
                                         <div class="tab__top">
@@ -268,10 +273,10 @@
                         <div class="tab-pane fade" id="pills-toshkent" role="tabpanel"
                             aria-labelledby="pills-toshkent-tab">
                             <div class="row">
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-10 col-lg-6">
                                     <a href="" class="project-link"><img src="images/toshkent.jpg" alt="tab content image"></a>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-10 col-lg-6">
                                     <div
                                         class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
                                         <div class="tab__top">
@@ -296,10 +301,10 @@
                         <div class="tab-pane fade" id="pills-street88" role="tabpanel"
                             aria-labelledby="pills-street88-tab">
                             <div class="row">
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-10 col-lg-6">
                                     <a href="" class="project-link"><img src="images/burger.jpg" alt="tab content image"></a>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-10 col-lg-6">
                                     <div
                                         class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
                                         <div class="tab__top">
@@ -324,10 +329,10 @@
                         <div class="tab-pane fade" id="pills-pizzeria" role="tabpanel"
                             aria-labelledby="pills-pizzeria-tab">
                             <div class="row">
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-10 col-lg-6">
                                     <a href="" class="project-link"><img src="images/pizza.jpg" alt="tab content image"></a>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-10 col-lg-6">
                                     <div
                                         class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
                                         <div class="tab__top">
@@ -353,7 +358,7 @@
             </div>
 
         </section>
-        <section class="capabilities">
+        <section id="capabilities" class="capabilities">
             <div class="container">
                 <div class="row flex-column align-items-center">
                     <h2 class="capabilities__title">возможности</h2>
@@ -434,7 +439,7 @@
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                             data-target="#collapseFour" aria-expanded="false"
                                             aria-controls="collapseFour">
-                                            <i class="fab fa-bootstrap"></i>javascript
+                                            <i class="fa-brands fa-js"></i>javascript
                                         </button>
                                     </h5>
                                 </div>
@@ -457,7 +462,7 @@
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                             data-target="#collapseFive" aria-expanded="false"
                                             aria-controls="collapseFive">
-                                            <i class="fab fa-bootstrap"></i>php
+                                            <i class="fa-brands fa-php"></i>php
                                         </button>
                                     </h5>
                                 </div>
@@ -480,7 +485,7 @@
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                             data-target="#collapseSix" aria-expanded="false"
                                             aria-controls="collapseSix">
-                                            <i class="fab fa-bootstrap"></i>mysql
+                                            <i class="fa-solid fa-database"></i>mysql
                                         </button>
                                     </h5>
                                 </div>
@@ -505,18 +510,17 @@
     </main>
 
     <footer>
-        <div class="container d-flex flex-column align-items-center">
-            <a href="" class="logo"><span>my</span>works</a>
-            <ul class="header__menu d-flex">
-                <li><a href="" class="header__link">история</a></li>
-                <li><a href="" class="header__link">работы</a></li>
-                <li><a href="" class="header__link">контакты</a></li>
-            </ul>
-            <div class="footer__contacts">
-                <a href="tel:+ 998 90 123 45 67">+ 998 90 123 45 67</a>
-                <a href="mailto:mymail@mail.my">mymail@mail.my</a>
+        <section id="contacts" class="contacts">
+            <div class="container d-flex flex-column align-items-center">
+            
+                <h2 class="contacts__title">контакты</h2>
+                <div class="footer__contacts">
+                    <a href="tel:+998909518601">+ 998 90 951 86 01</a>
+                    <a href="mailto:dimadragon2x5@gmail.com">dimadragon2x5@gmail.com</a>
+                </div>
             </div>
-        </div>
+        </section>
+        
     </footer>
 
 

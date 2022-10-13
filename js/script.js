@@ -88,7 +88,9 @@ $('.header__nav').css({
     
 })
 
-
+$('.header__content').css({
+    paddingTop: $('.header__nav').outerHeight()
+})
 
 
 
@@ -155,8 +157,25 @@ searchbtn.addEventListener('click', function () {
 
 */
 
+/*burger menu 1*/
 
-/*burger menu*/
+$('.nav__btn').click(function () {
+    $('.header__menu').css('transform', 'translateX(0)');
+    $('.nav__btn').css('opacity', '0');
+
+    $(document).mouseup(function (e) {
+        const list = $('.header__menu'),
+            link = $('.nav__link');
+
+        if (!list.is(e.target) && !link.is(e.target)) {
+            list.css('transform', 'translateX(-110%)');
+            $('.nav__btn').css('opacity', '1');
+        }
+    })
+}) 
+
+
+/*burger menu 2*/
 /*
 $('.burger__menu-btn').click(function () {
     $('.burger__menu').css('transform', 'translateX(0)');
@@ -268,3 +287,19 @@ $('.header__nav-cart-exit-btn').on( 'click', function( event ){
     $('.header__nav-cart-dropbox').css('display', 'none');
 });
 */
+
+
+
+// Scroll to ID
+
+$('.js-sсroll-to-id').click(function (e) {
+    e.preventDefault()
+    let attr = $(this).attr('href'),
+        toElement = $(attr).offset().top  //offset - счтает кол-во пикселей до элемента
+
+    $('html, body').animate({
+        scrollTop: toElement
+    }, {
+        duration: 1000  //время перехода
+    })
+})

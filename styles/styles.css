@@ -22,47 +22,25 @@ header{
     background-size: cover;
 
 }
+.header__logo {
+    display: flex;
+    width: 100px;
+    
+}
 .header__nav{
     background: #1e2020;
     padding: 23px 0;
 }
 .logo{
     padding: 6px 18px;
-    color: white;
-    font-size: 26px;
-    line-height: 19px;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 1;
+    
 }
-.logo span{
-    color: #ffcb02;
+
+.header__menu{
+    display: flex;
 }
-.logo:hover{
-    color: white;
-    text-decoration: none;
-}
-.logo::before{
-    content: '';
-    position: absolute;
-    top: -1px;
-    bottom: -1px;
-    right: -1px;
-    left: -1px;
-    background: linear-gradient(133deg, #fff, #ffcb02);
-    z-index: -1;
-}
-.logo::after{
-    content: '';
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    background: #1e2020;
-    z-index: -1;
-}
-.header__link{
+
+.nav__link {
     color: #fff;
     text-transform: uppercase;
     font-size: 20px;
@@ -70,14 +48,14 @@ header{
     line-height: 16px;
     margin: 0 27px;
 }
-.header__link:hover{
+.nav__link:hover{
     color: #ffcb02;
     text-decoration: none;
 }
 ul{
     margin: 0;
 }
-.header__menu li:nth-child(3) .header__link{
+.header__menu li:nth-child(4) .nav__link{
     margin-right: 0;
 }
 .header__content h1{
@@ -94,6 +72,21 @@ ul{
     font-size: 22px;
     font-family: "PT Sans";
 }
+
+
+
+
+.nav__btn{
+    display: none;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    align-items: center;
+    transition: 0.3s;
+    background: transparent;
+}
+
+
 
 
 /*MAIN*/
@@ -372,10 +365,10 @@ p{
 /*footer*/
 footer{
     background: #1f2020;
-    padding: 20px 0;
+    padding: 40px 0;
 }
-footer ul{
-    margin: 45px 0;
+.footer__contacts{
+    margin-top: 25px;
 }
 .footer__contacts a:nth-child(1){
     color: white;
@@ -395,29 +388,78 @@ footer ul{
 .footer__contacts a:hover{
     text-decoration: none;
 }
+.contacts__title{
+    color: #d2a90b;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-family: "PT Sans";
+    line-height: 28px;
+    margin-bottom: 20px;
+    
+}
+.contacts__title::before{
+    content: '';
+    display: block;
+    width: 52px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 8px;
+    margin-left: auto;
+}
+.contacts__title::after{
+    content: '';
+    display: block;
+    width: 52px;
+    height: 2px;
+    background: #fff;
+    margin-top: 8px;
+    
+}
 
 
 
 
-
-
-
-@media(max-width:768px){
-    .header__nav .container{
-        display: flex;
+@media(max-width:1200px){
+    
+    .works__content .row {
         flex-direction: column;
         align-items: center;
-        
     }
-    .header__menu{
-        margin-top: 20px;
+    .works__content .row div:nth-child(1) {
+        margin-bottom: 30px;
     }
 }
-@media(max-width:570px){
-    .header__menu{
-        flex-direction: column;
+@media(max-width:1024px){
+    .nav__btn{
+        display: flex;
         
     }
+    .header__menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        background: rgba(30, 32, 32, 0.912);
+        height: 100vh;
+        padding: 40px;
+        backdrop-filter: blur(2.5px);
+        box-shadow: 0 0 10px black;
+        transform: translateX(-110%);
+        transition: 0.5s;
+        z-index: 10;
+    }
+    .nav__link {
+        display: inline-block;
+        margin-top: 40px;
+    }
+    
+}
+@media(max-width:768px){
+    
+    
+}
+@media(max-width:570px){
+    
     .header__menu li{
         margin-top: 10px;
     }
@@ -434,7 +476,14 @@ footer ul{
         font-size: 20px;
         line-height: 25px;
     }
-
+    .footer__contacts {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .footer__contacts a:nth-child(1){
+        margin-right: 0px;
+    }
 }
 @media(max-width:375px){
     .tab__text a{
@@ -445,11 +494,14 @@ footer ul{
         flex-direction: column;
         align-items: center;
     }
-    .footer__contacts a:nth-child(1){
-        margin-right: 0px;
-    }
+    
     .header__content .container h1{
         margin-bottom: 30px;
+        font-size: 40px;
     }
+    .carousel__title{
+        line-height: 30px;
+        margin-bottom: 15px;
 
+    }
 }
