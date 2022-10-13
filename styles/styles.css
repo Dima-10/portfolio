@@ -212,6 +212,9 @@ p{
 .works__buttons{
     margin-bottom: 50px;
 }
+.works__content-img img{
+    border-radius: 6px;
+}
 .nav-pills .nav-link{
     background: #fff;
     color: #1e2020;
