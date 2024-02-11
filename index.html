@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./images/Logo-black.png">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>MD Codemasters</title>
+</head>
+
+<body>
+    <header class="header d-flex flex-column">
+        <nav class="header__nav">
+            <div class="container d-flex justify-content-between align-items-center">
+
+                <button class="nav__btn"><i class="fa-solid fa-bars"></i></button>
+                <a href="" class="header__logo"><img src="images/Logo-white.png" alt="MD" class="logo"></a>
+                <ul class="header__menu">
+                    <li><a href="#history" class="nav__link js-sсroll-to-id">история</a></li>
+                    <li><a href="#works" class="nav__link js-sсroll-to-id">работы</a></li>
+                    <li><a href="#capabilities" class="nav__link js-sсroll-to-id">возможности</a></li>
+                    <li><a href="#contacts" class="nav__link js-sсroll-to-id">контакты</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="header__content d-flex flex-grow-1 align-items-center">
+            <div class="container">
+                <h1>Привет,<br>я Мандалака Дмитрий </h1>
+                <p>Это мой сайт-портфолио. Я молодой и перспективный frontend веб-разработчик, заинтересованный в
+                    профессиональном развитии в прогрессирующей IT компании.
+                </p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="history" class="history">
+            <div class="history__text">
+                <div class="container">
+                    <div class="row flex-column align-items-center">
+                        <h2 class="history__title">история</h2>
+                        <div class="col-10">
+                            <p class="history__description">
+                                Занимаюсь программированием с 2017 года. Начал свой путь в IT с учебного центра PROWEB.
+                                Успешно окончил курс веб-разработки по специальности frontend developer. На протяжении
+                                следующих двух лет совершенствовал свои знания в области программирования и готовился к
+                                поступлению в ВУЗ.
+                                На данный момент являюсь студентом 3-го курса Ташкентского Университета Информационных
+                                технологий.
+                                Также с 2021 года являюсь сотрудником на проектной занятости в компании IDI development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="history__slider">
+                <div class="container">
+                    <div id="history-slider" class="carousel slide" data-ride="carousel">
+                        <div class="row">
+                            <div class="col-1 d-none d-md-block">
+                                <a class="carousel-control-prev" href="#history-slider" role="button" data-slide="prev">
+                                    <span><i class="fa-solid fa-angle-left"></i></span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="slider-image col-12 col-md-4 col-lg-5">
+                                                <img src="images/proweb.png" alt="slider image">
+                                            </div>
+                                            <div class="col-12 col-md-8 col-lg-7">
+                                                <div class="carousel__text">
+                                                    <h3 class="carousel__title"><span>обучение в</span> proweb</h3>
+                                                    <p class="carousel__description">
+                                                        На курсе веб-разработки я добавил в свой стек HTML, CSS, JS,
+                                                        Bootstrap, jQuery и PHP.
+
+                                                        Курс был направлен на обучение вёрстке и разработки frontend
+                                                        части веб-сайтов, но также давал необходимые знания о backend
+                                                        составляющей.
+
+                                                        В ходе обучения я проявил себя как один из лучших учеников. </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="slider-image col-12 col-md-4 col-lg-5">
+                                                <img src="images/idi_logo-img.png" alt="slider image">
+                                            </div>
+                                            <div class="col-12 col-md-8 col-lg-7">
+                                                <div class="carousel__text">
+                                                    <h3 class="carousel__title"><span>работа в</span> idi development
+                                                    </h3>
+                                                    <p class="carousel__description">
+                                                        За время работы в IDI development <a
+                                                            class="carousel__description-link"
+                                                            href="https://ididev.ru/">ididev.ru</a> я столкнулся с
+                                                        широким спектром сложности задач. Успешно выполнял как сольные
+                                                        так и командные проекты. Основной пул задач приходился на
+                                                        вёрстку веб-сайтов разного размера и сайтов-презентаций, для
+                                                        таких компаний таких как Abbott и другие, помимо этого выполнял
+                                                        и другие задачи. Я продолжаю развиваться и увеличивать объем
+                                                        знаний в области программирования. На данный момент занимаюсь
+                                                        изучением фреймворка Vue.js
+
+                                                    </p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-1 d-none d-md-block">
+                                <a class="carousel-control-next" href="#history-slider" role="button" data-slide="next">
+                                    <span><i class="fa-solid fa-angle-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="works" class="works">
+            <div class="works__text">
+                <div class="container">
+                    <div class="row flex-column align-items-center">
+                        <h2 class="works__title">работы</h2>
+                        <div class="col-10">
+                            <p class="works__description">
+                                В данном разделе, представлены примеры коммерческих проектов, выполненных при моем
+                                участии, а также и реализованные мной тренировочные макеты.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="works__buttons">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8">
+                            <ul class="nav nav-pills justify-content-around" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-project-1-tab" data-toggle="pill"
+                                        href="#pills-project-1" role="tab" aria-controls="pills-project-1"
+                                        aria-selected="true">Skullcandy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-project-2-tab" data-toggle="pill"
+                                        href="#pills-project-2" role="tab" aria-controls="pills-project-2"
+                                        aria-selected="false">impex life</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-project-3-tab" data-toggle="pill"
+                                        href="#pills-project-3" role="tab" aria-controls="pills-project-3"
+                                        aria-selected="false">Kruiz</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-project-4-tab" data-toggle="pill"
+                                        href="#pills-project-4" role="tab" aria-controls="pills-project-4"
+                                        aria-selected="false">design co.</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-project-5-tab" data-toggle="pill"
+                                        href="#pills-project-5" role="tab" aria-controls="pills-project-5"
+                                        aria-selected="false">supplement</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-project-6-tab" data-toggle="pill"
+                                        href="#pills-project-6" role="tab" aria-controls="pills-project-6"
+                                        aria-selected="false">starboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-project-7-tab" data-toggle="pill"
+                                        href="#pills-project-7" role="tab" aria-controls="pills-project-7"
+                                        aria-selected="false">wooder</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-project-8-tab" data-toggle="pill"
+                                        href="#pills-project-8" role="tab" aria-controls="pills-project-8"
+                                        aria-selected="false">luis oenrique</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-project-9-tab" data-toggle="pill"
+                                        href="#pills-project-9" role="tab" aria-controls="pills-project-9"
+                                        aria-selected="false">Food 100</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-project-10-tab" data-toggle="pill"
+                                        href="#pills-project-10" role="tab" aria-controls="pills-project-10"
+                                        aria-selected="false">Clock</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="works__content">
+                <div class="container-fluid">
+                    <div class="tab-content" id="pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="pills-project-1" role="tabpanel"
+                            aria-labelledby="pills-project-1-tab">
+                            <div class="row">
+                                <div class="works__content-img col-12 col-md-10 col-lg-6">
+                                    <a href="https://www.skullcandy.com/" class="project-link"><img
+                                            src="images/skullcandy.png" alt="tab content image"></a>
+                                </div>
+                                <div class="col-12 col-md-10 col-lg-6">
+                                    <div
+                                        class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                                        <div class="tab__top">
+                                            <h3>Веб-сайт<span> Skullcandy</span></h3>
+                                            <p>
+                                                Skullcandy - компания-производитель high-end аудиопродукции для
+                                                любителей
+                                                экстремальных видов спорта. Основателем компании является Рик Олден.
+                                                В 2003 году Рик решил создать бренд Skullcandy,
+                                                впоследствии получивший всемирное признание. Лозунг компании Skullcandy
+                                                звучит как «Присоединяйся к аудиореволюции». Продукция компании
+                                                отличается необычным дизайном и множеством цветовых решений.
+                                            </p>
+                                        </div>
+                                        <a href="https://www.skullcandy.com/">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-project-2" role="tabpanel"
+                            aria-labelledby="pills-project-2-tab">
+                            <div class="row">
+                                <div class="works__content-img col-12 col-md-10 col-lg-6">
+                                    <a href="http://dptostrv.beget.tech/" class="project-link"><img
+                                            src="images/impex-life.png" alt="tab content image"></a>
+                                </div>
+                                <div class="col-12 col-md-10 col-lg-6">
+                                    <div
+                                        class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                                        <div class="tab__top">
+                                            <h3>Веб-Сайт<span> Impex Life</span></h3>
+                                            <p>
+                                                Компания Impex Life основана в 2014 году и ведёт свою деятельность по
+                                                трем основным направлениям: организация хирургического лечения,
+                                                организация медицинских конференций и мастер-классов, поставки
+                                                медицинского оборудования.
+                                                Impex Life является официальным дилером немецкой компании KLS Martin. За
+                                                время работы компании, их клиентами стали многие медицинские учереждения
+                                                в различных городах России.
+                                            </p>
+                                        </div>
+                                        <a href="http://dptostrv.beget.tech/">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="tab-pane fade" id="pills-project-3" role="tabpanel"
+                            aria-labelledby="pills-project-3-tab">
+                            <div class="row">
+                                <div class="works__content-img col-12 col-md-10 col-lg-6">
+                                    <a href="https://kruiz.ru/" class="project-link"><img src="images/kruiz.png"
+                                            alt="tab content image"></a>
+                                </div>
+                                <div class="col-12 col-md-10 col-lg-6">
+                                    <div
+                                        class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                                        <div class="tab__top">
+                                            <h3>Веб-Сайт<span> kruiz</span></h3>
+                                            <p>
+                                                Kruiz - это проект помогающий всем желающим найти круиз в соответствии с
+                                                их предпочтениями и желаниями. На сайте можно вбрать круиз на любой
+                                                вкус, а также найти полезную информаию о выбранном круизе.
+                                            </p>
+                                        </div>
+                                        <a href="https://kruiz.ru/">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="pills-project-4" role="tabpanel"
+                            aria-labelledby="pills-project-4-tab">
+                            <div class="row">
+                                <div class="works__content-img col-12 col-md-10 col-lg-6">
+                                    <a href="https://dima-10.github.io/design-co/" class="project-link"><img
+                                            src="images/design-co.png" alt="tab content image"></a>
+                                </div>
+                                <div class="col-12 col-md-10 col-lg-6">
+                                    <div
+                                        class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                                        <div class="tab__top">
+                                            <h3>макет<span> design co.</span></h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+                                            </p>
+                                        </div>
+                                        <a href="https://dima-10.github.io/design-co/">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="pills-project-5" role="tabpanel"
+                            aria-labelledby="pills-project-5-tab">
+                            <div class="row">
+                                <div class="works__content-img col-12 col-md-10 col-lg-6">
+                                    <a href="https://dima-10.github.io/supplement/" class="project-link"><img
+                                            src="images/supplement.png" alt="tab content image"></a>
+                                </div>
+                                <div class="col-12 col-md-10 col-lg-6">
+                                    <div
+                                        class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                                        <div class="tab__top">
+                                            <h3>макет<span> supplement</span></h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+                                            </p>
+                                        </div>
+                                        <a href="https://dima-10.github.io/supplement/">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="pills-project-6" role="tabpanel"
+                            aria-labelledby="pills-project-6-tab">
+                            <div class="row">
+                                <div class="works__content-img col-12 col-md-10 col-lg-6">
+                                    <a href="https://dima-10.github.io/starboard/" class="project-link"><img
+                                            src="images/starboard.png" alt="tab content image"></a>
+                                </div>
+                                <div class="col-12 col-md-10 col-lg-6">
+                                    <div
+                                        class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                                        <div class="tab__top">
+                                            <h3>макет<span> starboard</span></h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+                                            </p>
+                                        </div>
+                                        <a href="https://dima-10.github.io/starboard/">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-project-7" role="tabpanel"
+                            aria-labelledby="pills-project-7-tab">
+                            <div class="row">
+                                <div class="works__content-img col-12 col-md-10 col-lg-6">
+                                    <a href="https://dima-10.github.io/Wooder/" class="project-link"><img
+                                            src="images/wooder.png" alt="tab content image"></a>
+                                </div>
+                                <div class="col-12 col-md-10 col-lg-6">
+                                    <div
+                                        class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                                        <div class="tab__top">
+                                            <h3>макет<span> wooder</span></h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+                                            </p>
+                                        </div>
+                                        <a href="https://dima-10.github.io/Wooder/">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="pills-project-8" role="tabpanel"
+                            aria-labelledby="pills-project-8-tab">
+                            <div class="row">
+                                <div class="works__content-img col-12 col-md-10 col-lg-6">
+                                    <a href="https://dima-10.github.io/celebrity/" class="project-link"><img
+                                            src="images/luisoenrique.png" alt="tab content image"></a>
+                                </div>
+                                <div class="col-12 col-md-10 col-lg-6">
+                                    <div
+                                        class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                                        <div class="tab__top">
+                                            <h3>макет<span> luis oenrique</span></h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+                                            </p>
+                                        </div>
+                                        <a href="https://dima-10.github.io/celebrity/">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="pills-project-9" role="tabpanel"
+                            aria-labelledby="pills-project-9-tab">
+                            <div class="row">
+                                <div class="works__content-img col-12 col-md-10 col-lg-6">
+                                    <a href="https://dima-10.github.io/Food-100/" class="project-link"><img
+                                            src="images/food-100.png" alt="tab content image"></a>
+                                </div>
+                                <div class="col-12 col-md-10 col-lg-6">
+                                    <div
+                                        class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                                        <div class="tab__top">
+                                            <h3>макет<span> food 100</span></h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+                                            </p>
+                                        </div>
+                                        <a href="https://dima-10.github.io/Food-100/">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="pills-project-10" role="tabpanel"
+                            aria-labelledby="pills-project-10-tab">
+                            <div class="row">
+                                <div class="works__content-img col-12 col-md-10 col-lg-6">
+                                    <a href="https://dima-10.github.io/clock/" class="project-link"><img
+                                            src="images/clock.png" alt="tab content image"></a>
+                                </div>
+                                <div class="col-12 col-md-10 col-lg-6">
+                                    <div
+                                        class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                                        <div class="tab__top">
+                                            <h3>макет<span> clock</span></h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+                                            </p>
+                                        </div>
+                                        <a href="https://dima-10.github.io/clock/">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="capabilities" class="capabilities">
+            <div class="container">
+                <div class="row flex-column align-items-center">
+                    <h2 class="capabilities__title">возможности</h2>
+                    <div class="col-12 col-md-10 col-lg-8">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="fab fa-html5"></i>html5
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        HTML — стандартизированный язык гипертекстовой разметки документов для просмотра
+                                        веб-страниц в браузере. Используется в том или ином виде во всех
+                                        веб-сайтах.<br>Я владею навыками верстки на HTML 5. Имею опыт работы с ним на
+                                        протяжении нескольких лет. Вся моя работа связанна с HTML.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            <i class="fab fa-css3-alt"></i>css3
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        CSS — формальный язык описания внешнего вида документа, написанного с
+                                        использованием языка разметки. Любая стиллизация сайта в той или иной мере
+                                        задействует CSS.<br>Я владею навыками верстки на CSS 3. Имею опыт разработки с
+                                        его помощью на протяжении нескольких лет.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            <i class="fab fa-bootstrap"></i>bootstrap5
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Bootstrap — это открытый и бесплатный HTML-, CSS- и JS-фреймворк, который
+                                        используют веб-разработчики для быстрой верстки адаптивных дизайнов сайтов и
+                                        веб-приложений.<br>Я также владею этим фреймворком и использую его в некоторых
+                                        проектах, если это удовлетворяет требованиям заказчика.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            <i class="fa-brands fa-js"></i>javascript
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        JavaScript — мультипарадигменный язык программирования. Поддерживает
+                                        объектно-ориентированный, императивный и функциональный стили.<br>JavaScript
+                                        является моим основным языком программирования, я не перестаю его изучать и
+                                        совершенствовать свои знания и навыки работы с ним. С его помощью можно
+                                        осуществить практически любую задачу.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                            <i class="fa-brands fa-php"></i>php
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        PHP — C-подобный скриптовый язык общего назначения, интенсивно применяемый для
+                                        разработки веб-приложений. В настоящее время поддерживается подавляющим
+                                        большинством хостинг-провайдеров и является одним из лидеров среди языков,
+                                        применяющихся для создания динамических веб-сайтов. <br>Помимо JavaScript я
+                                        также владею и продолжаю изучать PHP, но использую его реже, только при
+                                        необходимости работы на backend части.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingSix">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseSix" aria-expanded="false"
+                                            aria-controls="collapseSix">
+                                            <i class="fa-solid fa-database"></i>mysql
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        MySQL — свободная реляционная система управления базами данных.<br>Без баз
+                                        данных не возможно создание множества видов веб-сайтов таких как веб-магазины.
+                                        По этой причине я не мог не обратить внимание и не изучить MySQL
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contacts" class="contacts">
+            <div class="container d-flex flex-column align-items-center">
+
+                <h2 class="contacts__title">контакты</h2>
+                <div class="footer__contacts">
+                    <a href="https://t.me/Dl_MAN"><i class="fa-brands fa-telegram"></i> t.me/Dl_MAN</a>
+                    <a href="mailto:dimadragon2x5@gmail.com"><i class="fa-solid fa-envelope"></i>
+                        dimadragon2x5@gmail.com</a>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
